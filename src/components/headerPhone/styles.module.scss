@@ -1,0 +1,68 @@
+@import "../../../styles/color.module.scss";
+.nav{
+    display: none;
+}
+
+
+
+@media (max-width:768px) {
+    .nav{
+        background-color: rgba(0,0,0,0.3);
+        width: max-content;
+        display: block;
+        padding: 0.7rem 1.7rem;
+        z-index: 2;
+        position: fixed;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom:2rem;
+        display: flex;
+        gap: 0.8rem;
+        border-radius: 3rem;
+        backdrop-filter: blur(15px);
+    }
+    .bgIcon{
+        margin-bottom: 0;
+        background: transparent;
+        padding: 0.7rem;
+        border-radius: 50%;
+        display: flex;
+        color: white;
+        font-size: 1.6rem;
+    }
+    .bgIconActive{
+        margin-bottom: 0;
+        background: transparent;
+        padding: 0.7rem;
+        border-radius: 50%;
+        display: flex;
+        color: white;
+        font-size: 1.6rem;
+        color: $first-color;
+    }
+
+}
+
+@media (max-width:420px) {
+    .nav{
+        padding: 0.5rem 1.5rem;
+        margin: 0 auto;
+        gap: 0.2rem;
+    }
+    .bgIcon{
+        padding: 0.9rem;
+        font-size: 1.1rem;
+    }
+}
+@media (max-width:362px) {
+    .nav{
+        width: 270px;
+        padding: 0.5rem 1.5rem;
+        margin: 0 auto;
+        gap: 0.2rem;
+    }
+    .bgIcon{
+        padding: 0.9rem 0.5rem;
+        font-size: 1.1rem;
+    }
+}
