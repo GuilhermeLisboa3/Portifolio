@@ -11,11 +11,27 @@
 
 .button{
   display: inline-block;
-  background-color: $first-color;
+  background-color: transparent;
+  border: 1px solid $first-color;
   color: #fff;
   padding: 1rem;
   border-radius: .5rem;
   font-weight: $font-medium;
+  text-decoration: none;
+  &:hover{
+    color: $first-color;
+  }
+}
+
+.buttonIcon{
+  font-size: 1.25rem;
+  margin-left: 0.5rem;
+  transition: .3s;
+}
+
+.buttonFlex{
+  display:inline-flex;
+  align-items: center;
 }
 
 ::-webkit-scrollbar{

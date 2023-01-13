@@ -1,0 +1,49 @@
+@import "../../../styles/color.module.scss";
+@import "../../../styles/text.module.scss";
+
+.about {
+  height: 90vh;
+  background-color: $first-color-dark;
+  padding-top: 3rem; 
+}
+
+.titleAbout {
+  text-align: center;
+  font-size: $big-font-size;
+  font-weight: $font-semi-bold;
+  color: $text-color;
+  margin: 0;
+}
+
+
+.subTitleAbout {
+  text-align: center;
+  font-size: $h2-font-size;
+  font-weight: $font-medium;
+  color: $first-color;
+  margin: 0;
+}
+
+
+.containerAbout {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  margin-top: 2rem;
+}
+
+.imageAbout {
+  border-radius: 0.5rem;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.aboutDescription{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.description {
+  font-size: $h2-font-size;
+  color: white;
+}
