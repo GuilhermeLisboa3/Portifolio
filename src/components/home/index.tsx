@@ -9,6 +9,7 @@ import Link from "next/link";
 import { Header } from "../header";
 import { HeaderPhone } from "../headerPhone";
 import { Link as LinkScroll } from "react-scroll"
+import Image from "next/image";
 
 export const HomePage = () => {
   return (
@@ -35,7 +36,7 @@ export const HomePage = () => {
               </Link>
             </div>
             <div className={styles.homeImage}>
-              <img src="/profile-animate.svg" alt="profile-animate" className={styles.profileImg}/>
+              <Image width={500} height={500} src="/profile-animate.svg" alt="profile-animate" className={styles.profileImg}/>
             </div>
 
             <div className={styles.description}>
