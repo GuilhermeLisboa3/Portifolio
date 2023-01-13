@@ -1,0 +1,54 @@
+@import "../../../styles/color.module.scss";
+
+.header {
+  background-color: rgba(0, 0, 0, 0.4);
+  position: fixed;
+  height: 70px;
+  width: 100%;
+  z-index: 2;
+  p {
+    margin-bottom: 0;
+  }
+}
+.containerHeader {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.containerLogo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logo {
+  font-size: 2rem;
+  color: white;
+  font-weight: bold;
+}
+.color {
+  color: $first-color;
+}
+
+.navigation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+}
+.itensNavigation {
+  color: white;
+  font-weight: 500;
+  font-size: 1.2rem;
+  transition: 0.3s;
+  cursor: pointer;
+  &:hover {
+    color: $first-color;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    display: none;
+  }
+}
