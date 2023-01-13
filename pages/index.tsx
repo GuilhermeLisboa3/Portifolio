@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import { Header } from '../src/components/header'
+import { HeaderPhone } from '../src/components/headerPhone'
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       </Head>
       <main>
         <Header/>
+        <HeaderPhone/>
       </main>
     </>
   )
