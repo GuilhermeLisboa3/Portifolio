@@ -73,6 +73,16 @@
     gap: 1rem;
   }
 }
+@media (max-width: 552px) {
+
+  .titleAbout{
+    font-size: 2rem;
+  }
+  .subTitleAbout {
+    font-size: $h3-font-size
+  }
+
+}
 @media (max-width: 384px) {
   .about {
     height: 86vh;
