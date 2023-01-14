@@ -1,0 +1,56 @@
+@import "../../../styles/color.module.scss";
+@import "../../../styles/text.module.scss";
+
+.skill{
+    min-height: 85vh;
+    background-color: $first-color-dark;
+    padding-top: 5rem;
+}
+.title{
+  font-size: $big-font-size;
+  font-weight: $font-semi-bold;
+  text-align: center;
+  color: $text-color;
+  margin-bottom: 0px;
+}
+.subTitle{
+  text-align: center;
+  font-size: $h2-font-size;
+  font-weight: $font-medium;
+  color: $first-color;
+  margin-bottom: 2rem;
+}
+.skillsData{
+    width: 70%;
+    margin: 0px auto 2rem auto;
+}
+.skillsTitle{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0;
+}
+.skillsName{
+    font-size: $h3-font-size;
+    color: white;
+    font-weight: bold;
+}
+.skillsNumber{
+    font-size: $h3-font-size;
+    color: white;
+    font-weight: bold;
+}
+.skillsBar{
+    height: 5px;
+    border: .25rem;
+}
+
+@media (max-width:992px) {
+    .skillsData{
+        width: 100%;
+    }
+}
+@media (max-width:768px) {
+    .skill{
+        display: none;
+    }
+}
