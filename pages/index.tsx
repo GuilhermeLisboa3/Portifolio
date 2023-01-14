@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import { HomePage } from '../src/components/home'
 import { About } from '../src/components/about'
+import { Skills } from '../src/components/skills'
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <main>
         <HomePage/>
         <About/>
+        <Skills/>
       </main>
     </>
   )
