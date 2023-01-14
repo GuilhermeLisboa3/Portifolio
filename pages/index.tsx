@@ -3,6 +3,7 @@ import { HomePage } from '../src/components/home'
 import { About } from '../src/components/about'
 import { Skills } from '../src/components/skills'
 import { SkillsPhone } from '../src/components/skillsPhone'
+import { Resume } from '../src/components/resume'
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
         <About/>
         <Skills/>
         <SkillsPhone/>
+        <Resume/>
       </main>
     </>
   )
