@@ -1,0 +1,68 @@
+@import "../../../styles/color.module.scss";
+@import "../../../styles/text.module.scss";
+
+.footer {
+  background-color: $first-color-dark;
+  height: 30vh;
+  display: flex;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.title {
+  font-weight: bold;
+  font-size: 2.3rem;
+  text-align: center;
+  color: $text-color;
+}
+
+.spanColor{
+  color: $first-color;
+}
+
+.subTitle {
+  font-weight: bold;
+  font-size: $h3-font-size;
+  text-align: center;
+  color: white;
+}
+
+.footerIcon {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.icon {
+  font-size: $h2-font-size;
+  color: white;
+  :hover{
+    transition: 0.4s;
+    color: $first-color;
+  }
+}
+
+.copy {
+  font-size: $normal-font-size;
+  color: white;
+}
+
+@media(max-width:474px){
+  .title{
+    margin-top: 2rem;
+  }
+}
+
+@media(max-width:400px){
+  .title{
+    font-size: 2rem;
+    text-align: center;
+  }
+  .subTitle{
+    font-size: $normal-font-size;
+    text-align: center;
+    padding: 0 5px;
+  }
+}
