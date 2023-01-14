@@ -1,0 +1,94 @@
+@import "../../../styles/color.module.scss";
+@import "../../../styles/text.module.scss";
+.skill{
+    display: none;
+}
+@media (max-width:768px) {
+    .skill{
+      display: block;
+      min-height: 80vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      background-color: $first-color-dark;
+      text-align: center;
+    }
+    .title{
+      font-size: $big-font-size;
+      font-weight: $font-semi-bold;
+      text-align: center;
+      color: $text-color;
+      margin-bottom: 0px;
+    }
+    .subTitle{
+      text-align: center;
+      font-size: $h2-font-size;
+      font-weight: $font-medium;
+      color: $first-color;
+      margin-bottom: 2rem;
+    }
+    .ContainerSkill{
+      display: flex;   
+      flex-direction: column;
+      gap: 30px
+    }
+    .button{
+      background-color: transparent;
+      border: none;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 1rem;
+      &:focus{
+        background-color: transparent;
+      }
+    }
+    .divButton{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+    }
+    .icon{
+      font-size: 2rem;
+      color: $first-color;
+    }
+    .titleLenguage{
+      font-size: $h3-font-size;
+      font-weight: bold;
+      margin-bottom: 0;
+    }
+    .skillsData{
+      width: 70%;
+      margin: 0px auto 2rem auto;
+    }
+    .skillsTitle{
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 0;
+    }
+    .skillsName{
+      font-size: $h3-font-size;
+      color: white;
+      font-weight: bold;
+    }
+    .skillsNumber{
+      font-size: $h3-font-size;
+      color: white;
+      font-weight: bold;
+    }
+    .skillsBar{
+      height: 5px;
+      border: .25rem;
+    }
+}
+
+@media (max-width: 552px) {
+  .title{
+    font-size: 2rem;
+  }
+  .subAbout {
+    font-size: $h3-font-size
+  }
+}
