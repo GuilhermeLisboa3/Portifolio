@@ -1,0 +1,120 @@
+@import "../../../styles/color.module.scss";
+@import "../../../styles/text.module.scss";
+
+.resume{
+    padding-top: 5rem;
+    min-height: 100vh;
+    background-color: $first-color-dark ;
+    color: $text-color;
+}
+.resumeTitle {
+  text-align: center;
+  font-size: $big-font-size;
+  font-weight: $font-semi-bold;
+  color: $text-color;
+  margin: 0;
+}
+
+
+.resumeSubTitle {
+  text-align: center;
+  font-size: $h2-font-size;
+  font-weight: $font-medium;
+  color: $first-color;
+  margin-bottom: 3rem;
+}
+
+.resumeEducation{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 5px;
+    color: $first-color;
+    font-size: $h1-font-size;
+    margin-bottom: 3rem;
+}
+
+.qualificationData{
+    display: grid;
+    grid-template-columns: 1fr max-content 1fr;
+    column-gap: 1.6rem;
+}
+.ItensRight{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-bottom: 2rem;
+}
+.title{
+    font-size: $h3-font-size ;
+    font-weight: 500;
+}
+.subTitle{
+    display: inline-block;
+    font-size:  $normal-font-size ;
+    margin-bottom: 1rem;
+}
+.calendar{
+    font-size: $normal-font-size;
+    color: $first-color;
+}
+.rounder{
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    background-color: $first-color;
+    border-radius: 50%;
+}
+.line{
+    display: block;
+    width: 2px;
+    height: 100%;
+    background-color: $first-color;
+    transform: translate(6px,-7px);
+}
+
+@media(max-width:724px){
+    .resume{
+        min-height: 110vh;
+    }
+    .title{
+        font-size: $h2-font-size ;
+    }
+    .subTitle{
+        font-size:  $normal-font-size;
+    }
+    .calendar{
+        font-size: $small-font-size ;
+    }
+}
+@media(max-width:552px){ 
+  .resumeTitle{
+    font-size: 2rem;
+  }
+  .resumeSubTitle {
+    font-size: $h3-font-size
+  }
+}
+@media(max-width:468px){ 
+    .title{
+        font-size: $normal-font-size ;
+    }
+    .subTitle{
+        font-size:  $small-font-size;
+    }
+    .calendar{
+        font-size: $normal-font-size  ;
+    }
+}
+@media(max-width:320px){
+    .title{
+        font-size: $small-font-size ;
+    }
+    .subTitle{
+        font-size:  $smaller-font-size ;
+    }
+    .calendar{
+        font-size: $normal-font-size ;
+    }
+}
