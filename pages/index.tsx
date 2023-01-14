@@ -4,6 +4,7 @@ import { About } from '../src/components/about'
 import { Skills } from '../src/components/skills'
 import { SkillsPhone } from '../src/components/skillsPhone'
 import { Resume } from '../src/components/resume'
+import { Project } from '../src/components/project'
 
 export default function Home() {
   return (
@@ -20,6 +21,7 @@ export default function Home() {
         <Skills/>
         <SkillsPhone/>
         <Resume/>
+        <Project/>
       </main>
     </>
   )
