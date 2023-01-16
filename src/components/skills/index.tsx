@@ -12,8 +12,8 @@ export const Skills = () => {
     <>
       <div className={styles.skill} id="habilidade">
         <Container>
-          <h2 className={styles.title}>Habilidades</h2>
-          <p className={styles.subTitle}>meu nível técnico</p>
+          <h2 className="title">Habilidades</h2>
+          <p className="subTitle">meu nível técnico</p>
           <Row>
             <Col xs="6">
               <div className={styles.skillsData}>

@@ -5,23 +5,6 @@
   min-height: 90vh;
   background-color: $first-color-dark;
 }
-.title {
-  text-align: center;
-  font-size: $big-font-size;
-  font-weight: $font-semi-bold;
-  color: $text-color;
-  margin: 0;
-}
-
-
-.subTitle {
-  text-align: center;
-  font-size: $h2-font-size;
-  font-weight: $font-medium;
-  color: $first-color;
-  margin: 0;
-}
-
 
 .card {
   width: 280px;
@@ -88,14 +71,6 @@
   .project{
     height: 85vh;
   }
-
-  .title{
-    font-size: 2rem;
-  }
-  .subTitle {
-    font-size: $h3-font-size
-  }
-
 }
 @media(max-width:300px){
   .card{

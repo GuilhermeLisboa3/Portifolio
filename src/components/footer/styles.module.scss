@@ -10,23 +10,8 @@
   justify-content: space-around;
   align-items: center;
 }
-
-.title {
-  font-weight: bold;
-  font-size: 2.3rem;
-  text-align: center;
-  color: $text-color;
-}
-
 .spanColor{
   color: $first-color;
-}
-
-.subTitle {
-  font-weight: bold;
-  font-size: $h3-font-size;
-  text-align: center;
-  color: white;
 }
 
 .footerIcon {
@@ -47,12 +32,6 @@
 .copy {
   font-size: $normal-font-size;
   color: white;
-}
-
-@media(max-width:474px){
-  .title{
-    margin-top: 2rem;
-  }
 }
 
 @media(max-width:400px){

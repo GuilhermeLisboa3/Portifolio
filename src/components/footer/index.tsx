@@ -9,8 +9,8 @@ export const Footer = () => {
     <>
       <footer className={styles.footer}>
         <div className={styles.footerInfo}>
-          <p className={styles.title}>Port<span className={styles.spanColor}>folio</span></p>
-          <p className={styles.subTitle}>Sou Guilherme e este é o meu site pessoal, consulte-me aqui.</p>
+          <p className="title">Port<span className={styles.spanColor}>folio</span></p>
+          <p className="subTitle">Sou Guilherme e este é o meu site pessoal, consulte-me aqui.</p>
           <div className={styles.footerIcon}>
             <Link href={'https://www.linkedin.com/in/guilherme-gon%C3%A7alves-lisboa-abb8b0227/'} target={'_blank'}>
                 <FaLinkedinIn className={styles.icon}/>

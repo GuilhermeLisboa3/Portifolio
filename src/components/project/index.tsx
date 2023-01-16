@@ -11,8 +11,8 @@ export const Project = () => {
   return (
     <div className={styles.project} id="projetos">
       <Container>
-        <p className={styles.title}>Projetos</p>
-        <p className={styles.subTitle}>Trabalho mais recente</p>
+        <p className="title">Projetos</p>
+        <p className="subTitle">Trabalho mais recente</p>
       </Container>
       <div className="d-flex flex-column align-items-center py-4">
         <Splide

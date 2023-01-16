@@ -7,8 +7,8 @@ export const SkillsPhone = () => {
   return (
     <>
       <div className={styles.skill} id="habilidades">
-        <h2 className={styles.title}>Habilidades</h2>
-        <p className={styles.subTitle}>meu nível técnico</p>
+        <h2 className="title">Habilidades</h2>
+        <p className="subTitle">meu nível técnico</p>
         <Container className={styles.ContainerSkill}>
           <div>
             <Button className={styles.button} id="frontend">

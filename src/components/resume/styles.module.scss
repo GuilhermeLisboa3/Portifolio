@@ -7,23 +7,6 @@
     background-color: $first-color-dark ;
     color: $text-color;
 }
-.resumeTitle {
-  text-align: center;
-  font-size: $big-font-size;
-  font-weight: $font-semi-bold;
-  color: $text-color;
-  margin: 0;
-}
-
-
-.resumeSubTitle {
-  text-align: center;
-  font-size: $h2-font-size;
-  font-weight: $font-medium;
-  color: $first-color;
-  margin-bottom: 3rem;
-}
-
 .resumeEducation{
     display: flex;
     justify-content: center;
@@ -87,14 +70,6 @@
     .calendar{
         font-size: $small-font-size ;
     }
-}
-@media(max-width:552px){ 
-  .resumeTitle{
-    font-size: 2rem;
-  }
-  .resumeSubTitle {
-    font-size: $h3-font-size
-  }
 }
 @media(max-width:468px){ 
     .title{

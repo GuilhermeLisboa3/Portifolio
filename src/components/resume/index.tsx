@@ -13,8 +13,8 @@ export const Resume = () => {
   return (
     <div className={styles.resume} id="curriculo">
       <Container>
-        <h2 className={styles.resumeTitle}>Minhas Qualificações</h2>
-        <p className={styles.resumeSubTitle}>Minha Trajetoria Pessoal</p>
+        <h2 className="title">Minhas Qualificações</h2>
+        <p className="subTitle">Minha Trajetoria Pessoal</p>
 
         <div className={styles.resumeEducation}>
               <FaGraduationCap />

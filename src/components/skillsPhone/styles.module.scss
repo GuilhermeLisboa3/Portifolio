@@ -13,20 +13,6 @@
       background-color: $first-color-dark;
       text-align: center;
     }
-    .title{
-      font-size: $big-font-size;
-      font-weight: $font-semi-bold;
-      text-align: center;
-      color: $text-color;
-      margin-bottom: 0px;
-    }
-    .subTitle{
-      text-align: center;
-      font-size: $h2-font-size;
-      font-weight: $font-medium;
-      color: $first-color;
-      margin-bottom: 2rem;
-    }
     .ContainerSkill{
       display: flex;   
       flex-direction: column;
@@ -82,13 +68,4 @@
       height: 5px;
       border: .25rem;
     }
-}
-
-@media (max-width: 552px) {
-  .title{
-    font-size: 2rem;
-  }
-  .subAbout {
-    font-size: $h3-font-size
-  }
 }

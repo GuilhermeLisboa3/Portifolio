@@ -14,8 +14,8 @@ export const About = () => {
     <>
       <div className={styles.about} id="sobre">
         <Container>
-          <h2 className={styles.titleAbout}>Sobre mim</h2>
-          <p className={styles.subTitleAbout}>Introdução</p>
+          <h2 className="title">Sobre mim</h2>
+          <p className="subTitle">Introdução</p>
           <div className={styles.containerAbout}>
             <Image
               className={styles.imageAbout}

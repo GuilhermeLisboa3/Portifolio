@@ -6,12 +6,17 @@ import { FaLinkedinIn } from "react-icons/fa";
 import Link from 'next/link';
 import { FormEvent, useRef } from 'react';
 import emailjs from '@emailjs/browser';
+import process from "process";
 
 export const Contact = () => {
   const form = useRef<HTMLFormElement>(null);
   const sendEmail = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    emailjs.sendForm('service_qcpbeoc', 'template_8d31y8i', form.current!, 'ZpOL7COlMWq-Iwdm3')
+    const emailService = String(process.env.NEXT_PUBLIC_EMAIL_SERVICE)
+    const emailTemplate = String(process.env.NEXT_PUBLIC_EMAIL_TEMPLATE)
+    const publicKey = String(process.env.NEXT_PUBLIC_PUBLIC_KEY)
+
+    emailjs.sendForm(emailService, emailTemplate, form.current!, publicKey)
       .then(() => {
           const resetForm = e.target as HTMLFormElement;
           resetForm.reset()
@@ -24,8 +29,8 @@ export const Contact = () => {
     <>
       <div className={styles.contact} id='contato'>
         <Container>
-          <p className={styles.title}>Contato</p>
-          <p className={styles.subTitle}>Entrar em contato</p>
+          <p className="title">Contato</p>
+          <p className="subTitle">Entrar em contato</p>
 
           <div className={styles.containerContact}>
             <div className={styles.contactList}>
