@@ -42,9 +42,11 @@ export const HomePage = () => {
             <div className={styles.description}>
               <p className={styles.title}>Olá, eu sou o Guilherme</p>
               <p className={styles.subTitle}>Desenvolvedor Full Stack</p>
-              <button className="button">
-                  Contratar-me
-              </button>
+              <LinkScroll to="contato" smooth={true} offset={0} duration={500}>
+                <button className="button">
+                    Contratar-me
+                </button>
+              </LinkScroll>
             </div>
         </Container>
         <LinkScroll to="sobre" smooth={true} offset={0} duration={500}>
