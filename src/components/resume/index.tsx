@@ -27,8 +27,8 @@ export const Resume = () => {
               className={styles.ItensRight}
               data-aos="fade-right"
               data-aos-duration="1000">
-                <h3 className={styles.title}>CSS / HTML</h3>
-                <span className={styles.subTitle}>OneBitCode</span>
+                <h3 className={styles.title}>NodeJs, Typescript, TDD, DDD, Clean Architecture e SOLID</h3>
+                <span className={styles.subTitle}>Udemy</span>
                 <div className={styles.calendar}>
                   <FaRegCalendarAlt className={styles.Icon} /> 2022
                 </div>
@@ -53,10 +53,10 @@ export const Resume = () => {
               <div className="mb-4"
               data-aos="fade-right"
               data-aos-duration="1000">
-                <h3 className={styles.title}>JavaScript</h3>
-                <span className={styles.subTitle}>OneBitCode</span>
+                <h3 className={styles.title}>NodeJs Avançado com TDD, Clean Architecture e Typescript</h3>
+                <span className={styles.subTitle}>Udemy</span>
                 <div className={styles.calendar}>
-                  <FaRegCalendarAlt className={styles.Icon} /> 2022
+                  <FaRegCalendarAlt className={styles.Icon} /> 2023
                 </div>
               </div>
             </div>
@@ -70,10 +70,10 @@ export const Resume = () => {
               className={styles.ItensRight}
               data-aos="fade-right"
               data-aos-duration="1000">
-                <h3 className={styles.title}>NodeJs, Typescript, TDD, DDD, Clean Architecture e SOLID</h3>
+                <h3 className={styles.title}>ReactJS, Hooks, Recoil, TDD, Clean Architecture, SOLID</h3>
                 <span className={styles.subTitle}>Udemy</span>
                 <div className={styles.calendar}>
-                  <FaRegCalendarAlt className={styles.Icon} /> 2022
+                  <FaRegCalendarAlt className={styles.Icon} /> 2023
                 </div>
               </div>
 

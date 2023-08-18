@@ -62,6 +62,10 @@
   color: white;
 }
 @media (max-width:600px) {
+  .project {
+    min-height: auto;
+    padding: 3rem 0;
+  }
   .card {
     margin-left: 9px;
   }

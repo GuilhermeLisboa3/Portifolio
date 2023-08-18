@@ -4,7 +4,6 @@
 .skill{
     min-height: 85vh;
     background-color: $first-color-dark;
-    padding-top: 5rem;
 }
 .skillsData{
     width: 70%;
@@ -28,6 +27,10 @@
 .skillsBar{
     height: 5px;
     border: .25rem;
+}
+
+.listSkills {
+    columns: 2;
 }
 
 @media (max-width:992px) {

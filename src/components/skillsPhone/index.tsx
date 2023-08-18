@@ -3,7 +3,12 @@ import styles from "./styles.module.scss";
 import { BiCodeCurly } from "react-icons/bi";
 import { HiOutlineServer } from "react-icons/hi";
 import { MdKeyboardArrowDown } from "react-icons/md";
+import { useEffect, useState } from "react";
 export const SkillsPhone = () => {
+  const [skills, setSkills] = useState<Array<{ name: string, porcent: number}>>([])
+  useEffect(() => {
+    fetch('/api/skills').then(response => response.json()).then(data => setSkills(data.skills))
+  }, []);
   return (
     <>
       <div className={styles.skill} id="habilidades">
@@ -14,22 +19,24 @@ export const SkillsPhone = () => {
             <Button className={styles.button} id="frontend">
               <div className={styles.divButton}>
                 <BiCodeCurly className={styles.icon} />
-                <p className={styles.titleLenguage}>Front end</p>
+                <p className={styles.titleLenguage}>Linguagens</p>
               </div>
               <MdKeyboardArrowDown className={styles.icon} />
             </Button>
             <UncontrolledCollapse toggler="#frontend">
-              <div className={styles.skillsData}>
+              {
+              skills.map(skill => (
+                <div className={styles.skillsData} key={skill.name}>
                 <div className={styles.skillsTitle}>
-                  <h3 className={styles.skillsName}>HTML</h3>
-                  <span className={styles.skillsNumber}>90%</span>
+                  <h3 className={styles.skillsName}>{skill.name}</h3>
+                  <span className={styles.skillsNumber}>{skill.porcent}%</span>
                 </div>
                 <div className="progress">
                   <div
                     className="progress-bar bg-info"
                     role="progressbar"
                     aria-label="Basic example"
-                    style={{width: "90%"}}
+                    style={{width: `${skill.porcent}%`}}
                     aria-valuenow={50}
                     aria-valuemin={0}
                     aria-valuemax={100}
@@ -38,188 +45,8 @@ export const SkillsPhone = () => {
                   ></div>
                 </div>
               </div>
-              <div className={styles.skillsData}>
-                <div className={styles.skillsTitle}>
-                  <h3 className={styles.skillsName}>CSS</h3>
-                  <span className={styles.skillsNumber}>90%</span>
-                </div>
-                <div className="progress">
-                  <div
-                    className="progress-bar bg-info"
-                    role="progressbar"
-                    aria-label="Basic example"
-                    style={{width: "90%"}}
-                    aria-valuenow={50}
-                    aria-valuemin={0}
-                    aria-valuemax={100}
-                    data-aos="fade-right"
-                    data-aos-duration="1000"
-                  ></div>
-                </div>
-              </div>
-              <div className={styles.skillsData}>
-                <div className={styles.skillsTitle}>
-                  <h3 className={styles.skillsName}>Javascript</h3>
-                  <span className={styles.skillsNumber}>85%</span>
-                </div>
-                <div className="progress">
-                  <div
-                    className="progress-bar bg-info"
-                    role="progressbar"
-                    aria-label="Basic example"
-                    style={{width: "85%"}}
-                    aria-valuenow={50}
-                    aria-valuemin={0}
-                    aria-valuemax={100}
-                    data-aos="fade-right"
-                    data-aos-duration="1000"
-                  ></div>
-                </div>
-              </div>
-              <div className={styles.skillsData}>
-                <div className={styles.skillsTitle}>
-                  <h3 className={styles.skillsName}>Typescript</h3>
-                  <span className={styles.skillsNumber}>80%</span>
-                </div>
-                <div className="progress">
-                  <div
-                    className="progress-bar bg-info"
-                    role="progressbar"
-                    aria-label="Basic example"
-                    style={{width: "80%"}}
-                    aria-valuenow={50}
-                    aria-valuemin={0}
-                    aria-valuemax={100}
-                    data-aos="fade-right"
-                    data-aos-duration="1000"
-                  ></div>
-                </div>
-              </div>
-              <div className={styles.skillsData}>
-                <div className={styles.skillsTitle}>
-                  <h3 className={styles.skillsName}>React</h3>
-                  <span className={styles.skillsNumber}>70%</span>
-                </div>
-                <div className="progress">
-                  <div
-                    className="progress-bar bg-info"
-                    role="progressbar"
-                    aria-label="Basic example"
-                    style={{width: "70%"}}
-                    aria-valuenow={50}
-                    aria-valuemin={0}
-                    aria-valuemax={100}
-                    data-aos="fade-right"
-                    data-aos-duration="1000"
-                  ></div>
-                </div>
-              </div>
-            </UncontrolledCollapse>
-          </div>
-          <div>
-            <Button className={styles.button} id="backend">
-              <div className={styles.divButton}>
-                <HiOutlineServer className={styles.icon} />
-                <p className={styles.titleLenguage}>Back End</p>
-              </div>
-              <MdKeyboardArrowDown className={styles.icon} />
-            </Button>
-            <UncontrolledCollapse toggler="#backend">
-              <div className={styles.skillsData}>
-                <div className={styles.skillsTitle}>
-                  <h3 className={styles.skillsName}>NodeJs</h3>
-                  <span className={styles.skillsNumber}>85%</span>
-                </div>
-                <div className="progress">
-                  <div
-                    className="progress-bar bg-info"
-                    role="progressbar"
-                    aria-label="Basic example"
-                    style={{width: "85%"}}
-                    aria-valuenow={50}
-                    aria-valuemin={0}
-                    aria-valuemax={100}
-                    data-aos="fade-right"
-                    data-aos-duration="1000"
-                  ></div>
-                </div>
-              </div>
-              <div className={styles.skillsData}>
-                <div className={styles.skillsTitle}>
-                  <h3 className={styles.skillsName}>MongoDB</h3>
-                  <span className={styles.skillsNumber}>70%</span>
-                </div>
-                <div className="progress">
-                  <div
-                    className="progress-bar bg-info"
-                    role="progressbar"
-                    aria-label="Basic example"
-                    style={{width: "70%"}}
-                    aria-valuenow={50}
-                    aria-valuemin={0}
-                    aria-valuemax={100}
-                    data-aos="fade-right"
-                    data-aos-duration="1000"
-                  ></div>
-                </div>
-              </div>
-              <div className={styles.skillsData}>
-                <div className={styles.skillsTitle}>
-                  <h3 className={styles.skillsName}>PostgreSQL</h3>
-                  <span className={styles.skillsNumber}>80%</span>
-                </div>
-                <div className="progress">
-                  <div
-                    className="progress-bar bg-info"
-                    role="progressbar"
-                    aria-label="Basic example"
-                    style={{width: "80%"}}
-                    aria-valuenow={50}
-                    aria-valuemin={0}
-                    aria-valuemax={100}
-                    data-aos="fade-right"
-                    data-aos-duration="1000"
-                  ></div>
-                </div>
-              </div>
-              <div className={styles.skillsData}>
-                <div className={styles.skillsTitle}>
-                  <h3 className={styles.skillsName}>Jest</h3>
-                  <span className={styles.skillsNumber}>85%</span>
-                </div>
-                <div className="progress">
-                  <div
-                    className="progress-bar bg-info"
-                    role="progressbar"
-                    aria-label="Basic example"
-                    style={{width: "85%"}}
-                    aria-valuenow={50}
-                    aria-valuemin={0}
-                    aria-valuemax={100}
-                    data-aos="fade-right"
-                    data-aos-duration="1000"
-                  ></div>
-                </div>
-              </div>
-              <div className={styles.skillsData}>
-                <div className={styles.skillsTitle}>
-                  <h3 className={styles.skillsName}>Git</h3>
-                  <span className={styles.skillsNumber}>85%</span>
-                </div>
-                <div className="progress">
-                  <div
-                    className="progress-bar bg-info"
-                    role="progressbar"
-                    aria-label="Basic example"
-                    style={{width: "85%"}}
-                    aria-valuenow={50}
-                    aria-valuemin={0}
-                    aria-valuemax={100}
-                    data-aos="fade-right"
-                    data-aos-duration="1000"
-                  ></div>
-                </div>
-              </div>
+              ))
+            }
             </UncontrolledCollapse>
           </div>
         </Container>

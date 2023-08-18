@@ -1,0 +1,58 @@
+[
+  {
+    "name": "Pokedex",
+    "photo": "/pokedex.jpeg",
+    "description": "Uma pokedex desenvolvido com PostegresSQL, Nodejs, Nextjs, Typescript e Sass.",
+    "linkFront": "https://github.com/GuilhermeLisboa3/Pokedex-frontend",
+    "linkBack": "https://github.com/GuilhermeLisboa3/Pokedex-Backend",
+    "linkedin": "https://www.linkedin.com/feed/update/urn:li:activity:7064951487231049729/"
+  },
+  {
+    "name": "The Big Bang",
+    "photo": "/the-big-bang.jpeg",
+    "description": "Um site de The Big Bang desenvolvido com CSS, HTML, Bootstrap e JavaScript.",
+    "linkFront": "https://github.com/GuilhermeLisboa3/The_Big_Bang_Theory",
+    "linkedin": "https://www.linkedin.com/posts/guilhermegon%C3%A7alveslisboa_javascript-html-css-activity-6918240673452146688-CEI8?utm_source=share&utm_medium=member_desktop",
+    "linkBack": null
+  },
+  {
+    "name": "Docs Text",
+    "photo": "/docs-text.jpeg",
+    "description": "Um site para fazer anotações, desenvolvido com Nodejs, React, MongoDB e Sass.",
+    "linkFront": "https://github.com/GuilhermeLisboa3/Docs-Text",
+    "linkBack": null,
+    "linkedin": "https://www.linkedin.com/posts/guilhermegon%C3%A7alveslisboa_react-nodejs-fullstack-activity-6949004219316068352-VUoH?utm_source=share&utm_medium=member_desktop"
+  },
+  {
+    "name": "Animeflix",
+    "photo": "/animeflix.jpeg",
+    "description": "Site para você assistir seus animes favoritos. Desenvolvido com NextJs, Typescript, Node e PostgreSQL.",
+    "linkFront": "https://github.com/GuilhermeLisboa3/Animeflix-frontend",
+    "linkBack": "https://github.com/GuilhermeLisboa3/Animeflix-backend",
+    "linkedin": "https://www.linkedin.com/feed/update/urn:li:activity:6981690864179789824/"
+  },
+  {
+    "name": "Clean Api Node",
+    "photo": "/clean-api-node.jpeg",
+    "description": "Uma API de enquetes, desenvolvida com NodeJs, Typescript e utilizando os conceitos de TDD, DDD, Clean Architecture e SOLID.",
+    "linkFront": null,
+    "linkBack": "https://github.com/GuilhermeLisboa3/clean-node-api",
+    "linkedin": "https://www.linkedin.com/feed/update/urn:li:activity:7000931521452748800/"
+  },
+  {
+    "name": "Hotel Paraiso",
+    "photo": "/hotel-paraiso.jpeg",
+    "description": "Site de um hotel desenvolvido com HTML e CSS.",
+    "linkFront": "https://github.com/GuilhermeLisboa3/flexbox",
+    "linkBack": null,
+    "linkedin": null
+  },
+  {
+    "name": "Coliseu Pizzaria",
+    "photo": "/coliseu.jpeg",
+    "description": "Um projeto desenvolvido utilizando NextJs, Typescript, styled components, entre outras linguagens.",
+    "linkFront": "https://github.com/GuilhermeLisboa3/Coliseu-pizzaria-frontend",
+    "linkBack": "https://github.com/GuilhermeLisboa3/Coliseu-pizzaria-backend",
+    "linkedin": "https://www.linkedin.com/feed/update/urn:li:activity:7094716547901853696/"
+  }
+]

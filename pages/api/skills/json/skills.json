@@ -1,0 +1,58 @@
+[
+  {
+    "name": "HTML",
+    "porcent": 90
+  },
+  {
+    "name": "CSS",
+    "porcent": 90
+  },
+  {
+    "name": "JavaScript",
+    "porcent": 90
+  },
+  {
+    "name": "Typescript",
+    "porcent": 90
+  },
+  {
+    "name": "Nodejs",
+    "porcent": 90
+  },
+  {
+    "name": "React Native",
+    "porcent": 70
+  },
+  {
+    "name": "NextJs",
+    "porcent": 85
+  },
+  {
+    "name": "ReactJs",
+    "porcent": 90
+  },
+  {
+    "name": "PostgreSQL",
+    "porcent": 90
+  },
+  {
+    "name": "MongoDB",
+    "porcent": 80
+  },
+  {
+    "name": "Jest",
+    "porcent": 90
+  },
+  {
+    "name": "Cypress",
+    "porcent": 90
+  },
+  {
+    "name": "Git",
+    "porcent": 90
+  },
+  {
+    "name": "Git Hub",
+    "porcent": 90
+  }
+]

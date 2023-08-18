@@ -2,9 +2,10 @@
 @import "../../../styles/text.module.scss";
 
 .about {
-  height: 85vh;
+  height: 100vh;
   background-color: $first-color-dark;
   padding-top: 3rem; 
+  padding-bottom: 2rem;
 }
 
 .containerAbout {
@@ -57,7 +58,6 @@
 }
 @media (max-width: 384px) {
   .about {
-    height: 86vh;
     padding-top: 0;
   }
   .containerAbout {

@@ -31,16 +31,12 @@ export const About = () => {
               className={styles.description}
               data-aos="fade-up"
               data-aos-duration="1000">
-                Olá me chamo Guilherme, tenho 19 anos, moro em São Paulo.
-                Atualmente estou no meu primeiro ano da faculdade de análise e
-                desenvolvimento de sistema na Unip. Procuro sempre obter mais
-                experiências e muito aprendizado, estudando sempre que possível. E
-                com as experiências adquiridas ao longo dos meus estudos procuro
-                agora uma chance de efetivação na minha área de conhecimento.
+                  Atualmente estou no meu último ano estudando Análise e Desenvolvimento de Sistemas na Universidade Paulista. Minha paixão por criar soluções eficazes e inovadoras me levou a explorar as linguagens ReactJs, NodeJs, TypeScript, JavaScript e NextJs.
+                  Tenho uma mentalidade orientada à qualidade e à estrutura. Minha experiência em arquitetura de software inclui Clean Architecture e SOLID, que guiam minha abordagem para criar códigos escaláveis e flexíveis. Adoto princípios como TDD e DDD para garantir robustez e confiabilidade, e meu gosto por trabalhar com testes unitários e de integração solidifica essa busca por excelência.
               </p>
               <a 
               download="true"
-              href="/Guilherme-curriculo.pdf" 
+              href="/curriculo.pdf" 
               className='button buttonFlex'>
                 Download CV <MdOutlineFileDownload className='buttonIcon' />
               </a>
